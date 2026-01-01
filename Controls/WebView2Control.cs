@@ -59,6 +59,8 @@ namespace AvaloniauiWebView2.Controls
                     options: options);
 
                 _controller = await env.CreateCoreWebView2ControllerAsync(parent.Handle);
+                _controller.DefaultBackgroundColor = Color.White;
+
                 _controller.Bounds = new Rectangle(
                     0, 0,
                     (int)Bounds.Width,
